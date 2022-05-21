@@ -20,7 +20,7 @@ setup(
     author='Xiran Liu et al',
     zip_safe=False,
     packages=find_packages(),
-    install_requires=["cvxpy","matplotlib","networkx","numpy","pandas","python_louvain>=0.16","scipy","cvxopt"],
+    install_requires=["cvxpy","matplotlib","networkx","numpy","pandas","python_louvain>=0.16","scipy","cvxopt", "tqdm"],
     tests_require=[],
     include_package_data=True,
     long_description=long_description,
