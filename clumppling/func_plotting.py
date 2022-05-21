@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from itertools import product,combinations_with_replacement
 from collections import defaultdict
 import networkx as nx
+from tqdm import tqdm
 
 def plot_membership(ax,P,max_K,cmap,title):
 
@@ -274,7 +275,7 @@ def plot_all_modes(K_range,meanQ_modes,meanQ_acrossK_Q2P,meanQ_best_ILP_acrossK,
     prev_mode = None
     # K_idx = 1
     # while K_idx<len(K_range):
-    for l in meanQ_best_ILP_acrossK:
+    for l in tqdm(meanQ_best_ILP_acrossK):
         
         m1 = l.split("-")[0]#"{}#{}".format(K_range[K_idx-1],0)
         m2 = l.split("-")[1]
